@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"os"
 )
 
@@ -14,6 +13,5 @@ func main() {
 
 	profile := getEnvPlus("AWS_VAULT_PROFILE")
 	mainCmd := buildMainCommand(profile)
-	fmt.Printf("%s\n", mainCmd)
 	execCommand(mainCmd)
 }

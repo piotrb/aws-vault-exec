@@ -15,4 +15,4 @@ Needs `goreleaser` (https://goreleaser.com/)
 
 eg: `git tag -a 1.0.0 -m 1.0.0`
 
-`goreleaser build --rm-dist`
+`goreleaser release --rm-dist`

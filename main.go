@@ -39,5 +39,8 @@ func execCommand(args []string) {
 func main() {
 	profile := os.Getenv("AWS_VAULT_PROFILE")
 	mainCmd := buildMainCommand(profile)
+	if len(mainCmd) == 0 {
+		fatalError(1, "no command specified")
+	}
 	execCommand(mainCmd)
 }
